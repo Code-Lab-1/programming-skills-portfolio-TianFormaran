@@ -15,6 +15,15 @@ Assign a message to a variable, and print that message.
 Then change the value of the variable to a new message, and print the new
 message.
 
+#Type out the code below and add the correct data types to complete the variables
+#Assign a message to a variable, and print that message. Then change the value of the variable to a new message, and print the new message.
+
+#Original value for name was "Rafael Formaran"
+
+name = ("Angela Villapaz")
+
+print(name)
+
 &nbsp;
 &nbsp;
 &nbsp;
@@ -26,6 +35,9 @@ Your output should look something like the following, including the quotation ma
 
 Albert Einstein once said, “A person who never made a mistake never tried anything new.
 
+quote = ("Abraham Lincoln once said, \"Those who deny freedom to others, deserve it not for themselves\"")
+
+print(quote)
 
 &nbsp;
 &nbsp;
@@ -40,6 +52,21 @@ Print the name once, so the whitespace around the name is displayed.
 
 Then print the name using each of the three stripping functions, lstrip(), rstrip(), and strip().
 
+#Tidy up the code to make it easier to understand
+#Use a variable to represent a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, “\t” and “\n”, at least once.
+#Print the name once, so the whitespace around the name is displayed.
+#Then print the name using each of the three stripping functions, lstrip(), rstrip(), and strip().
+
+name = '  Angela Beatriz Villapaz  '
+
+print(f'String =\'{name}\'')
+
+print(f'After Removing Leading Whitespace =\'{name.lstrip()}\'')
+
+print(f'After Removing Trailing Whitespaces =\'{name.rstrip()}\'')
+
+print(f'After Trimming Whitespaces =\'{name.strip()}\'')
+
 
 &nbsp;
 &nbsp;
@@ -47,6 +74,10 @@ Then print the name using each of the three stripping functions, lstrip(), rstri
 ## Exercise 4: Favorite Number :ballot_box_with_check:
 Use a variable to represent your favorite number. Then,using that variable, create a message that reveals your favorite number. Print
 that message.
+
+favorite_number = (2)
+
+print("My favorite number is", favorite_number)
 
 &nbsp;
 &nbsp;
@@ -59,6 +90,14 @@ A girl heads to a computer shop to buy some USB sticks. She loves USB sticks and
 Write a programme that calculates how many USB sticks she can buy and how many pounds she will have left.
 
 You will to use the arithmetic operators to complete this exercise.
+
+total_money = (50)
+flash_drive = (6)
+total_flash_drive = (50//6)
+total_change = (50%6)
+
+print("The total number of flash drives she can buy is", total_flash_drive)
+print("She will have a total of £",total_change, "left")
 
 &nbsp;
 &nbsp;
