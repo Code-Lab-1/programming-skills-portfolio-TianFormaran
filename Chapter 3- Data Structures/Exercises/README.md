@@ -13,7 +13,14 @@ Store the names of a few of your friends in a list called names. Print each pers
 
  time.
 
+#Store the names of a few of your friends in a list called names. Print each person’s name by accessing each element in the list, one at a time.
 
+friends = ["Kirby","James","Pare","Sebastian"]
+
+print(friends[0])
+print(friends[1])
+print(friends[2])
+print(friends[3])
 
 
 &nbsp;
@@ -27,7 +34,16 @@ printing each person’s name, print a message to them. The text of each message
 
 personalized with the person’s name.
 
+#Start with the list you used in Exercise 1, but instead of just
+#printing each person’s name, print a message to them. The text of each message should be the same, but each message should be
+#personalized with the person’s name.
 
+friends = ["Kirby","James","Pare","Sebastian"]
+
+print("The Tallest is",friends[2])
+print("The most aesthetic is",friends[0])
+print("The anti-social is",friends[3])
+print("The shortest is",friends[1])
 
 
 &nbsp;
@@ -39,6 +55,16 @@ Think of your favorite mode of transportation, such as a motorcycle or a car, an
 
 to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 
+#Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
+#to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+
+modes_of_transportation= ["Motorcyle","Subaru WRX STi","Airplane","Boat"]
+
+print("I'm not really fond riding a",modes_of_transportation[0])
+print("A car that I would like to own is a",modes_of_transportation[1])
+print("I always get excited when I get to ride an",modes_of_transportation[2])
+print("One thing I don't neccesarily ride that often is a",modes_of_transportation[3])
+
 &nbsp;
 &nbsp;
 
@@ -47,6 +73,16 @@ to print a series of statements about these items, such as “I would like to ow
 If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d
 
 like to invite to dinner. Then use your list to print a message to each person, invitingthem to dinner.
+
+#If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d
+#like to invite to dinner. Then use your list to print a message to each person, invitingthem to dinner.
+
+dinner_guests = ["Angela","Kirby","James"]
+
+print("Hey",dinner_guests[0],"If you're free tonight would you perhaps want to go on a dinner date with me? love you <3")
+print("Good day to you",dinner_guests[1],"I would like to invite you to a dinner that I would be hosting")
+print("Good day to you",dinner_guests[2],"I would like to invite you to a dinner that I would be hosting")
+
 
 &nbsp;
 &nbsp;
@@ -63,6 +99,24 @@ someone else to invite.
 
 •Print a second set of invitation messages, one for each person who is still in your list.
 
+#You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
+#•Start with your program from Exercise 3-4. Add a print() call at the end of your program stating the name of the guest who can’t make it.
+#•Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+#•Print a second set of invitation messages, one for each person who is still in your list.
+
+   
+
+dinner_guests = ["Angela","Kirby","James"]
+
+#James couldn't come because of work
+
+dinner_guests[2] = "Sebastian"
+
+print("Hey",dinner_guests[0],"If you're free tonight would you perhaps want to go on a dinner date with me? love you <3")
+print("Good day to you",dinner_guests[1],"I would like to invite you to a dinner that I would be hosting")
+print("Good day to you",dinner_guests[2],"I would like to invite you to a dinner that I would be hosting")
+
+
 &nbsp;
 &nbsp;
 
@@ -77,6 +131,34 @@ You just found out that your new dinner table won’t arrive in time for the din
 •Print a message to each of the two people still on your list, letting them know they’re still invited.
 
 •Use del to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+
+#If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d
+#like to invite to dinner. Then use your list to print a message to each person, invitingthem to dinner.
+
+dinner_guests = ["Angela","Kirby","Sebastian"]
+
+#James couldn't come because of work
+
+#Unfortunately we only have seats for 2 guests
+
+print("Good day to you",dinner_guests[2],"unfortunately due to circumstances the dinner would have to rescheduled sorry")
+
+#omitting one guest from the list
+
+print(dinner_guests.pop(2),"Would be ommitted from the guest list")
+print("The remaining guests would be",dinner_guests)
+
+#printing remaining guests on list
+
+print("Hey",dinner_guests[0],"If you're free tonight would you perhaps want to go on a dinner date with me? love you <3")
+print("Good day to you",dinner_guests[1],"I would like to invite you to a dinner that I would be hosting")
+
+#deleting all guests from list
+
+del dinner_guests[:]
+print(dinner_guests,"all guests have been omitted from the list")
+
+
 &nbsp;
 &nbsp;
 
@@ -101,6 +183,49 @@ Think of at least five places in the world you’d like to visit.
 •	 Use sort() to change your list so it’s stored in alphabetical order. Print the list to show that its order has been changed.
 
 •	 Use sort() to change your list so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+#Think of at least five places in the world you’d like to visit. • Store the locations in a list. Make sure the list is not in alphabetical order.
+
+locations = ["Canada","United States","Japan","France","South Korea"]
+
+#Print your list in its original order. Don’t worry about printing the list neatly,just print it as a raw Python list.
+
+print(locations)
+
+#Use sorted() to print your list in alphabetical order without modifying the actual list.
+#Show that your list is still in its original order by printing it.
+
+print(sorted(locations))
+
+#Use sorted() to print your list in reverse alphabetical order without changing the order of the original list.
+#Show that your list is still in its original order by printing it again.
+
+locations = ["Canada","United States","Japan","France","South Korea"]
+locations.sort(reverse=True)
+print(locations)
+locations = ["Canada","United States","Japan","France","South Korea"]
+print(locations)
+
+#Use reverse() to change the order of your list. Print the list to show that its order has changed.
+#Use reverse() to change the order of your list again. Print the list to show it’s back to its original order.
+
+locations = ["Canada","United States","Japan","France","South Korea"]
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+
+#Use sort() to change your list so it’s stored in alphabetical order. Print the list to show that its order has been changed.
+
+locations = ["Canada","United States","Japan","France","South Korea"]
+print(sorted(locations))
+
+#Use sort() to change your list so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+locations = ["Canada","United States","Japan","France","South Korea"]
+locations.sort(reverse=True)
+print(locations)
+
 
 &nbsp;
 &nbsp;
